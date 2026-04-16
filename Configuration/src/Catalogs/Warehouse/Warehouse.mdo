@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f025c6d-3f6a-4c7b-a07c-a72ff2e636fd">
+  <producedTypes>
+    <objectType typeId="abff7362-5ec7-4c42-b6e3-055c9ba0054c" valueTypeId="6efa597e-2915-4d70-9372-34701d19c42d"/>
+    <refType typeId="c16f3738-bed8-4e68-a29f-2ad286b2f4ee" valueTypeId="95879d1d-5fd7-4212-82df-1ecd44b43db9"/>
+    <selectionType typeId="b3a29b3a-de5c-4f75-a586-3da06cb9dcd7" valueTypeId="9b2a73c9-6311-4f31-aaf9-0e86cbcdd2da"/>
+    <listType typeId="33a50980-2e6f-449e-a861-da1d92da10a9" valueTypeId="8171663c-f4fd-458f-a439-bcf251a35bfe"/>
+    <managerType typeId="7b051463-3b99-4044-89a9-1b4db0ba5caa" valueTypeId="179fb801-6291-45a1-b14a-d9e50daa7603"/>
+  </producedTypes>
+  <name>Warehouse</name>
+  <synonym>
+    <key>en</key>
+    <value>Warehouses</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Warehouse.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Warehouse.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>en</key>
+    <value>Warehouse</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>11</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="7a44c78f-d5be-42d3-9baa-6e4fe64fc1a1">
+      <name>Main</name>
+      <description>Main</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

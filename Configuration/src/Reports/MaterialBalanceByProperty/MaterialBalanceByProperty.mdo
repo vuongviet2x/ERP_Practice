@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b0b9e0b9-98ef-49f5-83bb-c99feb5888a6">
+  <producedTypes>
+    <objectType typeId="429baeb0-3168-4072-8c04-8b3b28429295" valueTypeId="a248cd06-8ba4-49f3-a510-c7ec822e1aa8"/>
+    <managerType typeId="abcde0d5-a5f8-4d33-9c8d-6c132b4eecfd" valueTypeId="c35d2c0b-2606-4300-9408-8df058ea4afe"/>
+  </producedTypes>
+  <name>MaterialBalanceByProperty</name>
+  <synonym>
+    <key>en</key>
+    <value>Material balance by property</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.MaterialBalanceByProperty.Template.MainDataCompositionSchema</mainDataCompositionSchema>
+  <templates uuid="d32a0ac6-46af-42a8-ac37-fa995769fae6">
+    <name>MainDataCompositionSchema</name>
+    <synonym>
+      <key>en</key>
+      <value>Main data composition schema</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

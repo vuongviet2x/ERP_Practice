@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd789579-b70b-4e50-a810-e8a427cbf3dd">
+  <producedTypes>
+    <objectType typeId="122abf3d-5211-493a-84b9-87c6da298a0a" valueTypeId="c0a2aa5f-adb3-4532-b7c9-2ccfbb9d120b"/>
+    <refType typeId="080f798d-f663-4b09-9138-e04670be0615" valueTypeId="3cd010e6-7b06-4324-aeb3-139983094c6a"/>
+    <selectionType typeId="8c638fcd-a37c-4423-91e5-0266a9dc1763" valueTypeId="d053ea8d-2b34-4d82-805b-63393174c6a9"/>
+    <listType typeId="fdc18c1c-1368-49f6-8fc8-f10ae1b7ec75" valueTypeId="4c156580-b5a5-49c5-b055-aaa75b5ca6c9"/>
+    <managerType typeId="68baa468-2e07-4551-99f7-5cc5ccada96a" valueTypeId="5cd3d522-a13f-4c76-a9f8-8a5f59a27c39"/>
+    <containerType typeId="a0e0346e-39d6-49f0-bf32-464c1eb8de51" valueTypeId="a42f9f4d-76fd-4004-a100-ab845a2ba9d6"/>
+  </producedTypes>
+  <name>ExtraDimensionTypes</name>
+  <synonym>
+    <key>en</key>
+    <value>Extra dimension types</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.ExtraDimensionTypes.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.ExtraDimensionTypes.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <type>
+    <types>CatalogRef.ExtraDimensions</types>
+    <types>CatalogRef.Customers</types>
+    <types>CatalogRef.MaterialsAndServices</types>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="1056b71e-e474-4df7-9a56-f6dbac81a527">
+      <name>Customers</name>
+      <description>Customers</description>
+      <code>000000002</code>
+      <type>
+        <types>CatalogRef.Customers</types>
+      </type>
+    </items>
+    <items id="4d939bb0-4e1f-4794-82a1-88710ef699d2">
+      <name>Materials</name>
+      <description>Materials</description>
+      <code>000000001</code>
+      <type>
+        <types>CatalogRef.MaterialsAndServices</types>
+      </type>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:ChartOfCharacteristicTypes>

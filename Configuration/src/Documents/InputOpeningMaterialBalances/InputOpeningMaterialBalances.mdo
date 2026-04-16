@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b10d2600-6c78-4c6d-a1ef-66924407c6c9">
+  <producedTypes>
+    <objectType typeId="f21768af-98be-4fe4-9453-fe443f41fa5d" valueTypeId="cdb8bdc8-fc71-4b04-ac5e-31251b3d81fc"/>
+    <refType typeId="8806b9d1-1541-421e-811c-235ea114b768" valueTypeId="8a984ccb-5bb0-462b-9f96-85d6d5b86974"/>
+    <selectionType typeId="6ad856dc-08a8-4c4f-9221-5858c16bde7b" valueTypeId="0231d0c2-16fc-4ddc-86fd-ed5fc65d8dc2"/>
+    <listType typeId="23cab76b-db5a-467c-bd48-0f0dad0cafeb" valueTypeId="a162c52b-ebbf-48a0-ab9e-386321e12b68"/>
+    <managerType typeId="ce89c58c-1a7a-4aeb-8287-060b35ff0e54" valueTypeId="7c7463af-2e7d-4ad5-9932-bb7e13827b88"/>
+  </producedTypes>
+  <name>InputOpeningMaterialBalances</name>
+  <synonym>
+    <key>en</key>
+    <value>Input opening material balances</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.InputOpeningMaterialBalances.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.InputOpeningMaterialBalances.Form.DocumentForm</defaultObjectForm>
+  <posting>Deny</posting>
+  <registerRecords>AccumulationRegister.BalanceOfMaterials</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <forms uuid="8173f149-e901-4cfb-be40-1b2eb6b2187f">
+    <name>DocumentForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Document form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

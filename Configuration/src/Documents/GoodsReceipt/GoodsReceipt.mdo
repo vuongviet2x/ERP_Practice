@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d2d9b639-01a9-4036-bd4c-0d99ceccb3a4">
+  <producedTypes>
+    <objectType typeId="38646aa9-7800-4fad-aab5-7c4b75b94474" valueTypeId="997e9660-f53c-42b7-a21b-ce7a9a32f1f0"/>
+    <refType typeId="4e21056f-03ff-41ff-95bd-2234e047c7c3" valueTypeId="9d5b4282-5221-477d-8fa4-f6b8c3daa31d"/>
+    <selectionType typeId="e44a60f9-7137-4d14-b242-9fb843faacb7" valueTypeId="84cf1753-90a0-4cc7-8186-d0eb00fdff85"/>
+    <listType typeId="a9cf7bf5-c3dd-4151-aba8-97f82f3dc1ec" valueTypeId="8947928f-c76f-472c-bc4f-e54f21b683a1"/>
+    <managerType typeId="7a054ad3-060b-4015-9c63-8e684cd3833e" valueTypeId="977846c0-5d38-477f-a653-4fa0abf4d511"/>
+  </producedTypes>
+  <name>GoodsReceipt</name>
+  <synonym>
+    <key>en</key>
+    <value>Goods receipt</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.GoodsReceipt.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.GoodsReceipt.Form.DocumentForm</defaultObjectForm>
+  <defaultListForm>Document.GoodsReceipt.Form.ListForm</defaultListForm>
+  <registerRecords>AccumulationRegister.BalanceOfMaterials</registerRecords>
+  <registerRecords>AccumulationRegister.CostOfMaterials</registerRecords>
+  <registerRecords>AccountingRegister.Primary</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="4bdaf0d5-34bb-4c86-9111-7a7ea38824fe">
+    <name>Warehouse</name>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Warehouse</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Warehouse.Main</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="72e112fd-823e-447c-a8b5-bf443aeaa5fc">
+    <name>DocumentForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Document form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="66fe1af6-0f7f-4ec2-b0c4-f04b735fc358">
+    <name>ListForm</name>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="7f65004e-99af-40d7-af86-66497a1abf8f">
+    <producedTypes>
+      <objectType typeId="001ed21a-bdf1-4f05-982d-396f708313df" valueTypeId="d56c8507-cff9-4fb2-98d0-89252e4b4005"/>
+      <rowType typeId="8d613663-5442-4196-9bf0-4f392dbc2a76" valueTypeId="26113bdd-9208-42a4-896a-5c6c28b61937"/>
+    </producedTypes>
+    <name>Materials</name>
+    <synonym>
+      <key>en</key>
+      <value>Materials</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <attributes uuid="12a2ca93-02d0-47ac-9989-b41f7d9c97c2">
+      <name>Material</name>
+      <synonym>
+        <key>en</key>
+        <value>Material</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.MaterialsAndServices</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="24f908e0-1655-42e5-b7cd-b24ea3915d80">
+      <name>Quantity</name>
+      <synonym>
+        <key>en</key>
+        <value>Quantity</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8a42c513-4f7b-44bf-a87c-1da911538f16">
+      <name>Price</name>
+      <synonym>
+        <key>en</key>
+        <value>Price</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="30081a3e-5bcb-453e-9f93-ea247d492efb">
+      <name>Total</name>
+      <synonym>
+        <key>en</key>
+        <value>Total</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="093fe913-98b2-4d4b-a3e3-32ef7c290996">
+      <name>PropertySet</name>
+      <synonym>
+        <key>en</key>
+        <value>Property set</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.MaterialOptions</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Filter.Owner</name>
+        <field>Document.GoodsReceipt.TabularSection.Materials.Attribute.Material</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

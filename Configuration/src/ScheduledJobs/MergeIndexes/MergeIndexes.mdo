@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="87432ca8-bdfe-4ed8-b955-a96d9009a05f">
+  <name>MergeIndexes</name>
+  <synonym>
+    <key>en</key>
+    <value>Merge indexes</value>
+  </synonym>
+  <methodName>CommonModule.ScheduleProcedures.MergeIndexes</methodName>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

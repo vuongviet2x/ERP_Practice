@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6b6452ff-0879-4f7d-976d-1a8330f645e6">
+  <producedTypes>
+    <refType typeId="870687d0-6954-457f-bd16-c9ae73c49d41" valueTypeId="7cecb4ce-0c10-488e-a7ff-2afdad6492a0"/>
+    <listType typeId="25d71b43-50d9-4f29-8169-fbcef54ad24f" valueTypeId="b926e454-9c11-498e-8d17-09d4b9539d55"/>
+    <managerType typeId="353d02c3-cc77-4956-90c4-5f26d9bd7bca" valueTypeId="5430d521-fdb9-4a0f-b2ab-cea329ffeb8d"/>
+  </producedTypes>
+  <name>MaterialServiceTypes</name>
+  <synonym>
+    <key>en</key>
+    <value>Material service types</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="cb92548f-5565-4876-ab72-f6f2a4b7d9cd">
+    <name>Material</name>
+    <synonym>
+      <key>en</key>
+      <value>Material</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="accea150-d0bc-48fe-a8d7-7d43fa2a741f">
+    <name>Service</name>
+    <synonym>
+      <key>en</key>
+      <value>Service</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

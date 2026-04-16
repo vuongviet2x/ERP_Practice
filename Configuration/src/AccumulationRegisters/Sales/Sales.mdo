@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="53e0fecd-4d4a-4042-b886-a5499ed95671">
+  <producedTypes>
+    <selectionType typeId="c879d000-f583-4653-9daa-3c6867d66ebd" valueTypeId="a553b2a0-b986-4dc5-a7f9-b8df203e9c3a"/>
+    <listType typeId="58317e99-5f3c-45b8-a752-2c4b4ce730a6" valueTypeId="a1c1b30d-b2bd-4298-ae29-0f0acecc2182"/>
+    <managerType typeId="c7a765e4-c1b7-48b9-999c-72fdc6588f8a" valueTypeId="5d6e051b-2085-4987-a45c-8d4801fdc9f1"/>
+    <recordSetType typeId="fafc4b5f-e362-45c7-b1eb-d15a0d697c68" valueTypeId="d4605079-b2dd-4cc2-8032-8718d6974ea3"/>
+    <recordKeyType typeId="e858717d-a216-46cd-8a9d-e292d79cf4cd" valueTypeId="d8079fbd-6b70-44f3-a572-762feeb0d9de"/>
+    <recordType typeId="d9320812-4e00-484b-9c30-945989363188" valueTypeId="e1a47409-ddfd-43d9-9bf1-e333c5414ae1"/>
+  </producedTypes>
+  <name>Sales</name>
+  <synonym>
+    <key>en</key>
+    <value>Sales</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Sales register records</value>
+  </extendedListPresentation>
+  <resources uuid="50d555f7-ceb0-4cf7-9b9a-7b5f1df51fc7">
+    <name>Quantity</name>
+    <synonym>
+      <key>en</key>
+      <value>Quantity</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="35851845-dfb3-43a1-af0b-31e2256d6fcc">
+    <name>Revenue</name>
+    <synonym>
+      <key>en</key>
+      <value>Revenue</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="19a7a8ec-1d47-40c4-b370-089f264af2c9">
+    <name>Cost</name>
+    <synonym>
+      <key>en</key>
+      <value>Cost</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="2c018ac4-5f96-4ab4-9138-7e12b94f88a6">
+    <name>MaterialOrService</name>
+    <synonym>
+      <key>en</key>
+      <value>Material or service</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.MaterialsAndServices</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="304016da-2904-428c-83ca-6eb70cfaf90b">
+    <name>Customer</name>
+    <synonym>
+      <key>en</key>
+      <value>Customer</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Customers</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a815d0aa-0cd7-4957-bcce-42facda5c170">
+    <name>Technician</name>
+    <synonym>
+      <key>en</key>
+      <value>Technician</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Employees</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

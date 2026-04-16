@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="23e6584b-675f-4d12-8c53-1e3e3a8274da">
+  <producedTypes>
+    <selectionType typeId="45c329a9-fc50-40d4-b44a-ab6c5667bbc3" valueTypeId="fdcfc39b-7180-4da6-b68e-e46ffe4f6031"/>
+    <listType typeId="1c6e9a7f-b586-4073-ac08-a9418c732579" valueTypeId="440ab74b-dae5-4841-998f-61235f7fe646"/>
+    <managerType typeId="9c425dab-0cc3-41af-9dfc-db1351faf380" valueTypeId="9883813c-7184-4366-a1f0-8c3d49393e94"/>
+    <recordSetType typeId="cf1f6873-6022-47c9-a481-3eb40ecd3b29" valueTypeId="6db9a89e-4c6f-45e6-b3ff-dbec27446adc"/>
+    <recordKeyType typeId="3115ca4c-d072-4f62-8f87-a34b3f126231" valueTypeId="66f71838-da71-4816-b82e-6f4a4f2aa449"/>
+    <recordType typeId="70a4f9d5-6419-42d6-80c9-36de08ae0794" valueTypeId="0c7f942a-dc00-48fd-820c-079ce5f01bc3"/>
+    <recordManagerType typeId="fc3a4cfd-7263-4eb5-8931-449b0ebb9e9d" valueTypeId="b48418c5-3369-44a9-a9e8-fb6b1975b900"/>
+  </producedTypes>
+  <name>MaterialPropertyValues</name>
+  <synonym>
+    <key>en</key>
+    <value>Material property values</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.MaterialPropertyValues.Form.RecordForm</defaultRecordForm>
+  <defaultListForm>InformationRegister.MaterialPropertyValues.Form.ListForm</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>en</key>
+    <value>Property and value</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Material option details</value>
+  </listPresentation>
+  <resources uuid="c62751fe-644b-4283-9a44-5c774558c6cd">
+    <name>Value</name>
+    <synonym>
+      <key>en</key>
+      <value>Value</value>
+    </synonym>
+    <type>
+      <types>Characteristic.MaterialProperties</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Filter.Owner</name>
+      <field>InformationRegister.MaterialPropertyValues.Dimension.PropertyType</field>
+    </choiceParameterLinks>
+    <linkByType>
+      <field>InformationRegister.MaterialPropertyValues.Dimension.PropertyType</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="ce005c9c-1f60-4e71-95ed-a79012a1841e">
+    <name>PropertySet</name>
+    <synonym>
+      <key>en</key>
+      <value>Property set</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.MaterialOptions</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6985e392-5da3-456b-941c-aade017e1189">
+    <name>PropertyType</name>
+    <synonym>
+      <key>en</key>
+      <value>Property</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.MaterialProperties</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="fd2be00a-3363-4f43-a55f-fb75a2856c0d">
+    <name>ListForm</name>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8cce0772-854f-43b0-b955-8bf048e0208c">
+    <name>RecordForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

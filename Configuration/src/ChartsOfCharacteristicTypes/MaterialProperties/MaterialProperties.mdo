@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3b471648-9590-40c0-8019-a563501101a8">
+  <producedTypes>
+    <objectType typeId="8b7a5130-1799-4500-8c0c-9a1495a592eb" valueTypeId="b73c1a76-9c08-4386-a44b-cd0f2ca82cce"/>
+    <refType typeId="66e1980c-e61f-47e5-a344-f5414b20a7b7" valueTypeId="c4131bae-32d7-4ada-b6d7-78b7b0d16e2f"/>
+    <selectionType typeId="f4dc8f5c-64ee-4c9e-815f-2ba660619d82" valueTypeId="09815bcb-ccd6-430e-a2cc-61adf6c03366"/>
+    <listType typeId="162c4ce3-42dc-49c1-8ad5-9b1542be4eff" valueTypeId="a194c581-8909-494d-8bc4-37ab39db459b"/>
+    <managerType typeId="a9f03ce4-ccd4-4290-ac68-f886ba40942c" valueTypeId="b8dfef33-61fc-4584-bdd3-cac053acaa2c"/>
+    <containerType typeId="9d69918f-529e-490c-99a2-932c5e714a5e" valueTypeId="2ac36446-0a76-448a-b7d0-b886bed01663"/>
+  </producedTypes>
+  <name>MaterialProperties</name>
+  <synonym>
+    <key>en</key>
+    <value>Material properties</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.MaterialProperties.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.MaterialProperties.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <characteristicExtValues>Catalog.AdditionalMaterialProperties</characteristicExtValues>
+  <type>
+    <types>CatalogRef.AdditionalMaterialProperties</types>
+    <types>Boolean</types>
+    <types>String</types>
+    <types>Date</types>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>15</precision>
+      <scale>3</scale>
+    </numberQualifiers>
+    <stringQualifiers>
+      <length>25</length>
+    </stringQualifiers>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>11</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:ChartOfCharacteristicTypes>

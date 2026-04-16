@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7e80a7c0-6af1-412f-b0e8-37d26f73e210">
+  <name>Enterprise</name>
+  <synonym>
+    <key>en</key>
+    <value>Enterprise</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Enterprise</picture>
+  </picture>
+  <content>CommonPicture.Enterprise</content>
+  <content>InformationRegister.MaterialPropertyValues</content>
+  <content>Catalog.MaterialsAndServices</content>
+  <content>Catalog.Customers</content>
+  <content>Catalog.Employees</content>
+  <content>Catalog.Warehouse</content>
+  <content>Catalog.MaterialOptions</content>
+  <content>Catalog.AdditionalMaterialProperties</content>
+  <content>Catalog.ExtraDimensions</content>
+</mdclass:Subsystem>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0291a230-8d8d-4a6c-b2dd-7d705168e9c1">
+  <name>Lesson24</name>
+  <synonym>
+    <key>en</key>
+    <value>Lesson24</value>
+  </synonym>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="54976f78-db0c-462b-8657-49baabefa8f6"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="c9eb2c94-813a-4587-8a37-fa8e054a3de4"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="fe47fe3c-0b4b-4f2c-a929-983bae48635c"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="149d8d47-7273-4d30-85f9-a37fc83100d1"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="fbf8696a-03c3-4706-8603-a4a503332824"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="f30964d5-81c8-4aa9-88d2-b0820b4de082"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="1f64829d-8375-4d96-a3a5-99670e854467"/>
+  <configurationExtensionCompatibilityMode>8.3.26</configurationExtensionCompatibilityMode>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usedMobileApplicationFunctionalities>
+    <functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>OSBackup</functionality>
+      <use>true</use>
+    </functionality>
+  </usedMobileApplicationFunctionalities>
+  <defaultLanguage>Language.English</defaultLanguage>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <modalityUseMode>DontUse</modalityUseMode>
+  <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
+  <compatibilityMode>8.3.24</compatibilityMode>
+  <languages uuid="f511dc28-12fa-4cfb-86f8-c3ead1aed288">
+    <name>English</name>
+    <synonym>
+      <key>en</key>
+      <value>English</value>
+    </synonym>
+    <languageCode>en</languageCode>
+  </languages>
+  <subsystems>Subsystem.Accounting</subsystems>
+  <subsystems>Subsystem.Enterprise</subsystems>
+  <subsystems>Subsystem.Intventory</subsystems>
+  <subsystems>Subsystem.Payroll</subsystems>
+  <subsystems>Subsystem.Services</subsystems>
+  <commonPictures>CommonPicture.Accounting</commonPictures>
+  <commonPictures>CommonPicture.Enterprise</commonPictures>
+  <commonPictures>CommonPicture.Inventory</commonPictures>
+  <commonPictures>CommonPicture.Payroll</commonPictures>
+  <commonPictures>CommonPicture.Services</commonPictures>
+  <roles>Role.Accountant</roles>
+  <roles>Role.Administrator</roles>
+  <roles>Role.CEO</roles>
+  <roles>Role.PayrollAccountant</roles>
+  <roles>Role.Technician</roles>
+  <commonModules>CommonModule.CatalogProcessing</commonModules>
+  <commonModules>CommonModule.DocumentProcessing</commonModules>
+  <commonModules>CommonModule.Exchange</commonModules>
+  <commonModules>CommonModule.ScheduleProcedures</commonModules>
+  <exchangePlans>ExchangePlan.Branches</exchangePlans>
+  <scheduledJobs>ScheduledJob.MergeIndexes</scheduledJobs>
+  <scheduledJobs>ScheduledJob.UpdateIndex</scheduledJobs>
+  <constants>Constant.NumberingPrefix</constants>
+  <catalogs>Catalog.AdditionalMaterialProperties</catalogs>
+  <catalogs>Catalog.Customers</catalogs>
+  <catalogs>Catalog.Employees</catalogs>
+  <catalogs>Catalog.ExtraDimensions</catalogs>
+  <catalogs>Catalog.MaterialOptions</catalogs>
+  <catalogs>Catalog.MaterialsAndServices</catalogs>
+  <catalogs>Catalog.Warehouse</catalogs>
+  <documents>Document.GoodsReceipt</documents>
+  <documents>Document.InputOpeningMaterialBalances</documents>
+  <documents>Document.Services</documents>
+  <enums>Enum.MaterialServiceTypes</enums>
+  <reports>Report.GenericReport</reports>
+  <reports>Report.MaterialBalanceByProperty</reports>
+  <reports>Report.Materials</reports>
+  <reports>Report.ProfitByCustomer</reports>
+  <reports>Report.RevenueByTechnician</reports>
+  <reports>Report.ServiceEvaluation</reports>
+  <reports>Report.ServiceList</reports>
+  <reports>Report.ServicesDocumentRegister</reports>
+  <reports>Report.TrialBalance</reports>
+  <dataProcessors>DataProcessor.DataExchange</dataProcessors>
+  <informationRegisters>InformationRegister.MaterialPropertyValues</informationRegisters>
+  <informationRegisters>InformationRegister.Prices</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.BalanceOfMaterials</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.CostOfMaterials</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.Sales</accumulationRegisters>
+  <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ExtraDimensionTypes</chartsOfCharacteristicTypes>
+  <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.MaterialProperties</chartsOfCharacteristicTypes>
+  <chartsOfAccounts>ChartOfAccounts.Main</chartsOfAccounts>
+  <accountingRegisters>AccountingRegister.Primary</accountingRegisters>
+</mdclass:Configuration>

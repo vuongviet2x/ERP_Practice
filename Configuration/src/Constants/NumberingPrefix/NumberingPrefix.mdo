@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="43f57285-219c-42b0-bc45-35dbbc3226db">
+  <producedTypes>
+    <managerType typeId="e1f4b31d-cc58-4a59-9683-5e93b9ed91e2" valueTypeId="6db95f8e-ff9d-4e67-8240-edb70d04dcf6"/>
+    <valueManagerType typeId="77050e34-b525-41be-b1f2-b60fd69a4aba" valueTypeId="cd651dee-a66d-4169-b8d8-5eee0cab0e52"/>
+    <valueKeyType typeId="c40ba05f-ca3c-4f53-b664-730b0e73a92c" valueTypeId="6af0e4bb-c868-4cbe-b6cc-06a5ae5eaadb"/>
+  </producedTypes>
+  <name>NumberingPrefix</name>
+  <synonym>
+    <key>en</key>
+    <value>Numbering prefix</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>2</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

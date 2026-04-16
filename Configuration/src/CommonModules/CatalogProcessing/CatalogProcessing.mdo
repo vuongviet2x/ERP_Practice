@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f6c5d203-4127-4a95-a119-a76b2fca1243">
+  <name>CatalogProcessing</name>
+  <synonym>
+    <key>en</key>
+    <value>Catalog processing</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

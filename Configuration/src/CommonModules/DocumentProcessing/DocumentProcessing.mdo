@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e00dee8e-c1f0-4c6e-a0f0-32798c3c962b">
+  <name>DocumentProcessing</name>
+  <synonym>
+    <key>en</key>
+    <value>Document processing</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <server>true</server>
+</mdclass:CommonModule>

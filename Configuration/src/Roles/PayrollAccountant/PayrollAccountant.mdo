@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="df712f3e-8206-4c74-b3d7-7c45a7670ef8">
+  <name>PayrollAccountant</name>
+  <synonym>
+    <key>en</key>
+    <value>Payroll accountant</value>
+  </synonym>
+</mdclass:Role>

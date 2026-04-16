@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dd13468e-9ed4-42b3-b56b-fed7f3c9a934">
+  <name>Intventory</name>
+  <synonym>
+    <key>en</key>
+    <value>Intventory</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Inventory</picture>
+  </picture>
+  <content>CommonPicture.Inventory</content>
+  <content>Catalog.MaterialsAndServices</content>
+  <content>Catalog.Warehouse</content>
+  <content>Document.GoodsReceipt</content>
+  <content>AccumulationRegister.BalanceOfMaterials</content>
+  <content>Report.Materials</content>
+  <content>InformationRegister.Prices</content>
+  <content>AccumulationRegister.CostOfMaterials</content>
+  <content>AccumulationRegister.Sales</content>
+  <content>Report.MaterialBalanceByProperty</content>
+</mdclass:Subsystem>

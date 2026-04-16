@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e272314d-1875-4f07-8413-3be4b29fbbc5">
+  <producedTypes>
+    <objectType typeId="e8b95887-5277-4972-89aa-5f39c115cc96" valueTypeId="1e630d70-ea39-48fc-a953-1138d918f508"/>
+    <managerType typeId="370d92e4-cf7f-45a5-87bb-ec6e2c1ab70e" valueTypeId="e58ea8a8-3075-4dbd-8597-b70bb1f9a3e5"/>
+  </producedTypes>
+  <name>GenericReport</name>
+  <synonym>
+    <key>en</key>
+    <value>Generic report</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.GenericReport.Template.MainDataCompositionSchema</mainDataCompositionSchema>
+  <templates uuid="804c1eb0-730b-4eb8-94f8-e02bc2561ae9">
+    <name>MainDataCompositionSchema</name>
+    <synonym>
+      <key>en</key>
+      <value>Main data composition schema</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

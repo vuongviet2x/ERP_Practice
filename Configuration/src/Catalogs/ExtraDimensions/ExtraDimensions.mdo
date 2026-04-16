@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="94f89830-0608-4696-928c-d5b264a26376">
+  <producedTypes>
+    <objectType typeId="6d78fc50-730a-41d9-9ecf-b8af46c9f69a" valueTypeId="8ce11145-e4ec-4b03-9c48-484f7c750ad2"/>
+    <refType typeId="688225d6-975f-4ad4-88d8-1ebf8664fd8c" valueTypeId="cc8dfa2e-992d-4b5c-98f2-9627f4be6b20"/>
+    <selectionType typeId="8576907a-e3ec-4da8-b46b-c44831047051" valueTypeId="425b9c15-2376-467f-b4ea-0f3583d3d1c5"/>
+    <listType typeId="b5b62a1d-df67-49b5-80ec-d6942a42dfaa" valueTypeId="5f30ee5f-9f34-42ff-aafa-628c92a13909"/>
+    <managerType typeId="cde06cb2-9e2d-4187-8f45-b9932847f957" valueTypeId="8333fc87-959d-47e2-a90a-fa8c47fe5dc4"/>
+  </producedTypes>
+  <name>ExtraDimensions</name>
+  <synonym>
+    <key>en</key>
+    <value>Extra dimensions</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ExtraDimensions.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ExtraDimensions.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>ChartOfCharacteristicTypes.ExtraDimensionTypes</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

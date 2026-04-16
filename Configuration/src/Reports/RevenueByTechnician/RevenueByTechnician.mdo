@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a72aa56-8517-43f2-8185-6f4126e1d5d9">
+  <producedTypes>
+    <objectType typeId="b9c11cab-380f-4f66-8426-74604b3f9542" valueTypeId="468d77bb-08af-49f5-a8f9-5937c1f81c30"/>
+    <managerType typeId="88138193-2180-4f76-9f82-120238f478da" valueTypeId="e9ae45a1-5f6a-48f9-ae9d-f0b9be95c1b0"/>
+  </producedTypes>
+  <name>RevenueByTechnician</name>
+  <synonym>
+    <key>en</key>
+    <value>Revenue by technician</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.RevenueByTechnician.Form.ReportForm</defaultForm>
+  <mainDataCompositionSchema>Report.RevenueByTechnician.Template.MainDataCompositionSchema</mainDataCompositionSchema>
+  <forms uuid="32786986-7d38-49c1-ab9a-18b690de9322">
+    <name>ReportForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Report form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d383657e-f8cd-416a-81d5-86779e88ee5f">
+    <name>MainDataCompositionSchema</name>
+    <synonym>
+      <key>en</key>
+      <value>Main data composition schema</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

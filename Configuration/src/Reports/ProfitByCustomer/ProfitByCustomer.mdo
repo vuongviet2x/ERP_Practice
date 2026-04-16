@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cc477dad-fba4-4051-bf89-a66348feb19c">
+  <producedTypes>
+    <objectType typeId="cab2e429-a229-4716-bfed-9d4e934738c8" valueTypeId="c49e4986-d815-4de6-a5ba-a5bf3ba4b567"/>
+    <managerType typeId="4be46f3e-97de-4cae-9821-2779ea7340a8" valueTypeId="a807e2c2-6c10-48a9-a687-60a8f1456be6"/>
+  </producedTypes>
+  <name>ProfitByCustomer</name>
+  <synonym>
+    <key>en</key>
+    <value>Profit by customer</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ProfitByCustomer.Template.MainDataCompositionSchema</mainDataCompositionSchema>
+  <templates uuid="e44550c6-0683-42a2-a43d-8df161b011d6">
+    <name>MainDataCompositionSchema</name>
+    <synonym>
+      <key>en</key>
+      <value>Main data composition schema</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

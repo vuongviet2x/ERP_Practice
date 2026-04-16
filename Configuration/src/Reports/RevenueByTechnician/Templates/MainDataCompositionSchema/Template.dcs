@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>DataSource1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>DataSet1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Customer</dataPath>
+			<field>Customer</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Technician</dataPath>
+			<field>Technician</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Period</dataPath>
+			<field>Period</field>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Revenue</dataPath>
+			<field>Revenue</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Revenue</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>MaterialOrService</dataPath>
+			<field>MaterialOrService</field>
+		</field>
+		<dataSource>DataSource1</dataSource>
+		<query>SELECT
+	SalesTurnovers.Technician AS Technician,
+	SalesTurnovers.Period AS Period,
+	SalesTurnovers.Customer AS Customer,
+	SalesTurnovers.RevenueTurnover AS Revenue
+FROM
+	AccumulationRegister.Sales.Turnovers(, , Day, ) AS SalesTurnovers</query>
+	</dataSet>
+	<totalField>
+		<dataPath>Revenue</dataPath>
+		<expression>Sum(Revenue)</expression>
+	</totalField>
+	<parameter>
+		<name>BeginOfPeriod</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Begin of period</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>EndOfPeriod</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>End of period</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<expression>EndOfPeriod(&amp;EndOfPeriod,"Day")</expression>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Default</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Default</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Technician</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Period</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Customer</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Revenue</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>BeginOfPeriod</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>8a7f20bd-952f-4129-818f-3b6c9805feba</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>EndOfPeriod</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>ebfaf2da-cbec-44ae-a9b2-3977bc2f604e</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>GroupFieldsPlacement</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionGroupFieldsPlacement">SeparatelyAndInTotalsOnly</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>VerticalOverallPlacement</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">Begin</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Title</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Revenue by technician</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Technician</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Period</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>Day</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="dcscor:Field">DataParameters.BeginOfPeriod</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="dcscor:Field">DataParameters.EndOfPeriod</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>RevenueAmounts</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Revenue amounts</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Revenue</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>BeginOfPeriod</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>ab1cdc5f-f37c-4962-a2c5-5768cae1ee5c</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>EndOfPeriod</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>a5922f60-c0b0-4912-b299-a34511116491</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ChartType</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:ChartType">Gauge</dcscor:value>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ChartType.ValuesReferenceBands</dcscor:parameter>
+						<dcscor:value xmlns:d7p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d7p1:ChartReferenceBands">
+							<d7p1:referenceBand>
+								<d7p1:begin xsi:type="xs:decimal">0</d7p1:begin>
+								<d7p1:end xsi:type="xs:decimal">999</d7p1:end>
+								<d7p1:labelText xsi:type="v8:LocalStringType">
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Bad</v8:content>
+									</v8:item>
+								</d7p1:labelText>
+								<d7p1:toolTip xsi:type="v8:LocalStringType"/>
+								<d7p1:labelArea>
+									<d7p1:font xsi:type="v8ui:Font" kind="AutoFont"/>
+									<d7p1:textColor>auto</d7p1:textColor>
+									<d7p1:backColor>auto</d7p1:backColor>
+									<d7p1:border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+									</d7p1:border>
+									<d7p1:borderColor>auto</d7p1:borderColor>
+								</d7p1:labelArea>
+								<d7p1:color>#FFFF99</d7p1:color>
+								<d7p1:borderColor>auto</d7p1:borderColor>
+								<d7p1:displayAreaBegin>0.0</d7p1:displayAreaBegin>
+								<d7p1:displayAreaEnd>1.0</d7p1:displayAreaEnd>
+								<d7p1:beginIsPointNumber>false</d7p1:beginIsPointNumber>
+								<d7p1:endIsPointNumber>false</d7p1:endIsPointNumber>
+							</d7p1:referenceBand>
+							<d7p1:referenceBand>
+								<d7p1:begin xsi:type="xs:decimal">1000</d7p1:begin>
+								<d7p1:end xsi:type="xs:decimal">2000</d7p1:end>
+								<d7p1:labelText xsi:type="v8:LocalStringType">
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Good</v8:content>
+									</v8:item>
+								</d7p1:labelText>
+								<d7p1:toolTip xsi:type="v8:LocalStringType"/>
+								<d7p1:labelArea>
+									<d7p1:font xsi:type="v8ui:Font" kind="AutoFont"/>
+									<d7p1:textColor>auto</d7p1:textColor>
+									<d7p1:backColor>auto</d7p1:backColor>
+									<d7p1:border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+									</d7p1:border>
+									<d7p1:borderColor>auto</d7p1:borderColor>
+								</d7p1:labelArea>
+								<d7p1:color>#32CD32</d7p1:color>
+								<d7p1:borderColor>auto</d7p1:borderColor>
+								<d7p1:displayAreaBegin>0.0</d7p1:displayAreaBegin>
+								<d7p1:displayAreaEnd>1.0</d7p1:displayAreaEnd>
+								<d7p1:beginIsPointNumber>false</d7p1:beginIsPointNumber>
+								<d7p1:endIsPointNumber>false</d7p1:endIsPointNumber>
+							</d7p1:referenceBand>
+							<d7p1:referenceBand>
+								<d7p1:begin xsi:type="xs:decimal">2001</d7p1:begin>
+								<d7p1:end xsi:type="xs:decimal">3000</d7p1:end>
+								<d7p1:labelText xsi:type="v8:LocalStringType">
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Excellent</v8:content>
+									</v8:item>
+								</d7p1:labelText>
+								<d7p1:toolTip xsi:type="v8:LocalStringType"/>
+								<d7p1:labelArea>
+									<d7p1:font xsi:type="v8ui:Font" kind="AutoFont"/>
+									<d7p1:textColor>auto</d7p1:textColor>
+									<d7p1:backColor>auto</d7p1:backColor>
+									<d7p1:border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+									</d7p1:border>
+									<d7p1:borderColor>auto</d7p1:borderColor>
+								</d7p1:labelArea>
+								<d7p1:color>#FF00FF</d7p1:color>
+								<d7p1:borderColor>auto</d7p1:borderColor>
+								<d7p1:displayAreaBegin>0.0</d7p1:displayAreaBegin>
+								<d7p1:displayAreaEnd>1.0</d7p1:displayAreaEnd>
+								<d7p1:beginIsPointNumber>false</d7p1:beginIsPointNumber>
+								<d7p1:endIsPointNumber>false</d7p1:endIsPointNumber>
+							</d7p1:referenceBand>
+						</dcscor:value>
+					</dcscor:item>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemChart">
+				<dcsset:point>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Technician</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Revenue</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:point>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

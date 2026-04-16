@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2fdad096-e6c9-4cd7-bc31-0847e6309aea">
+  <producedTypes>
+    <objectType typeId="1adfb32e-ee55-4a69-9aef-d47b5ffa08db" valueTypeId="ebce1664-00ae-4d1a-a3bd-e9de259f5ed1"/>
+    <managerType typeId="51d7d9b0-5201-4ff0-a53e-442d04b69549" valueTypeId="4a7171b0-a102-4987-9bfb-a172f68caf3b"/>
+  </producedTypes>
+  <name>DataExchange</name>
+  <synonym>
+    <key>en</key>
+    <value>Data exchange</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.DataExchange.Form.Form</defaultForm>
+  <forms uuid="3e6a4d39-87c4-4b32-8811-0e64e66ba639">
+    <name>Form</name>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

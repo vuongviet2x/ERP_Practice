@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="69bb5b91-421e-4154-923c-cb755bd49d8c">
+  <name>ScheduleProcedures</name>
+  <synonym>
+    <key>en</key>
+    <value>Schedule procedures</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b04f2fd9-e1ae-4da6-b670-7900ec6ec3c3">
+  <producedTypes>
+    <objectType typeId="ffbc6d30-b4a4-49a3-b472-1949e0f704eb" valueTypeId="7b358450-c8a7-498b-af92-c0571687f51b"/>
+    <managerType typeId="915712fe-1b87-48ce-926b-15d383a4121d" valueTypeId="2619f662-ddf6-41f0-935b-6a11a8833577"/>
+  </producedTypes>
+  <name>ServiceEvaluation</name>
+  <synonym>
+    <key>en</key>
+    <value>Service evaluation</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ServiceEvaluation.Template.MainDataCompositionSchema</mainDataCompositionSchema>
+  <templates uuid="a9a69a85-6301-40d4-bc02-337d110d8023">
+    <name>MainDataCompositionSchema</name>
+    <synonym>
+      <key>en</key>
+      <value>Main data composition schema</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

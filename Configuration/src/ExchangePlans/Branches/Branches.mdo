@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExchangePlan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06ee0abc-48b5-4ff8-8ada-d856797dfb3a" thisNode="99b4dd47-1b4b-4222-90bc-d29a17afb965">
+  <producedTypes>
+    <objectType typeId="13df0f52-e674-4822-af1a-c55fab65e15e" valueTypeId="dbd739bd-869f-470a-b5cf-764dc940f6ea"/>
+    <refType typeId="bf0bfe52-1ebb-44be-98aa-0e48dfb513ef" valueTypeId="de024eef-c26b-43ee-9b1a-4e92af4b83d2"/>
+    <selectionType typeId="9a922d6b-b212-46a0-b55b-5b1ccabf80f8" valueTypeId="cd59f164-4790-47e8-a0c6-952089d3152a"/>
+    <listType typeId="3c0aa827-4520-4d31-8ff9-ee1634c42ae8" valueTypeId="cf2737d2-7ab5-4d8f-9012-cf39d1180eff"/>
+    <managerType typeId="8cb8b75c-8c9c-4edf-8364-61c82ca7e693" valueTypeId="5ab97bc9-58e5-4274-b33d-fe2bc04f9058"/>
+  </producedTypes>
+  <name>Branches</name>
+  <synonym>
+    <key>en</key>
+    <value>Branches</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ExchangePlan.Branches.StandardAttribute.Description</inputByString>
+  <inputByString>ExchangePlan.Branches.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>en</key>
+    <value>Branch</value>
+  </objectPresentation>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <content>
+    <mdObject>Document.Services</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>InformationRegister.MaterialPropertyValues</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>ChartOfCharacteristicTypes.MaterialProperties</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>AccumulationRegister.BalanceOfMaterials</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>Catalog.Warehouse</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>AccumulationRegister.Sales</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>Catalog.Customers</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>Catalog.MaterialsAndServices</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>Catalog.AdditionalMaterialProperties</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>Catalog.MaterialOptions</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>AccumulationRegister.CostOfMaterials</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>InformationRegister.Prices</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>Document.GoodsReceipt</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>Catalog.Employees</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ExchangePlan.Branches.Form.NodeForm</defaultObjectForm>
+  <defaultListForm>ExchangePlan.Branches.Form.ListForm</defaultListForm>
+  <attributes uuid="9b85e621-cab1-4c34-80a8-630f61801bc1">
+    <name>Main</name>
+    <synonym>
+      <key>en</key>
+      <value>Main</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="c72d88af-4406-4d75-adf1-e20e1f76e813">
+    <name>NodeForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Node form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0443d217-afae-4abd-8e23-7ad2af833f06">
+    <name>ListForm</name>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ExchangePlan>

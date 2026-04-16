@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fc5986ed-3af9-4fe0-93e2-a2e767cc26bf">
+  <name>Accountant</name>
+  <synonym>
+    <key>en</key>
+    <value>Accountant</value>
+  </synonym>
+</mdclass:Role>

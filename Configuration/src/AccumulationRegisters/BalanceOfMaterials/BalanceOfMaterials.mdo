@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c9e6e9a-0d5b-4280-b101-2b06de16c4ae">
+  <producedTypes>
+    <selectionType typeId="93366a68-a797-4520-aa2a-20256f7c5490" valueTypeId="be6c0bd1-2c81-40e2-9af1-50ddeb76ebda"/>
+    <listType typeId="d1f6da11-193b-46d4-91d2-0fe0e2806316" valueTypeId="188ebb57-9064-4ba3-8b5b-6865f20bab2e"/>
+    <managerType typeId="baaba9c3-d6b0-4f73-baaa-d08cd5d84d81" valueTypeId="007bc097-0dd1-433e-8a17-8ad5c3af9c42"/>
+    <recordSetType typeId="1302bdb4-3855-4f9b-928f-29d4c2de0a70" valueTypeId="4ff580e4-00fd-4a3c-b20d-e0bcb05437cd"/>
+    <recordKeyType typeId="e23e3f47-a318-405b-af37-53d44b7fcfb7" valueTypeId="a59230fd-a6f7-41a8-83bd-594e961be68c"/>
+    <recordType typeId="a8d3ef61-c577-45dd-899a-f2d5673ea7e1" valueTypeId="e43c7fa9-e515-457b-ac86-0673c670564d"/>
+  </producedTypes>
+  <name>BalanceOfMaterials</name>
+  <synonym>
+    <key>en</key>
+    <value>Balance of materials</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Register records for ¶Balance of materials</value>
+  </extendedListPresentation>
+  <resources uuid="3bba3fdc-26f4-4553-b6cb-d24546805da6">
+    <name>Quantity</name>
+    <synonym>
+      <key>en</key>
+      <value>Quantity</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="305698ee-bc90-4dae-a875-56217986475c">
+    <name>Material</name>
+    <synonym>
+      <key>en</key>
+      <value>Material</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.MaterialsAndServices</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="2b03ae05-b479-407b-a78a-8f7d84a6228f">
+    <name>Warehouse</name>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Warehouse</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b77e5131-537d-47d5-857d-5a0e6805778e">
+    <name>PropertySet</name>
+    <synonym>
+      <key>en</key>
+      <value>Property set</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.MaterialOptions</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

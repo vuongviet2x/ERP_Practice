@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0d14f23a-d13a-489e-9aa7-84ea7e159086">
+  <name>Services</name>
+  <synonym>
+    <key>en</key>
+    <value>Services</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Services</picture>
+  </picture>
+  <content>CommonPicture.Services</content>
+  <content>Catalog.Customers</content>
+  <content>Catalog.Employees</content>
+  <content>Catalog.MaterialsAndServices</content>
+  <content>Catalog.Warehouse</content>
+  <content>Document.Services</content>
+  <content>AccumulationRegister.BalanceOfMaterials</content>
+  <content>Report.Materials</content>
+  <content>InformationRegister.Prices</content>
+  <content>AccumulationRegister.CostOfMaterials</content>
+  <content>AccumulationRegister.Sales</content>
+  <content>Report.ServicesDocumentRegister</content>
+  <content>Report.ServiceEvaluation</content>
+  <content>Report.RevenueByTechnician</content>
+  <content>Report.ServiceList</content>
+  <content>Report.ProfitByCustomer</content>
+  <content>Report.GenericReport</content>
+</mdclass:Subsystem>

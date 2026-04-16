@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b66affa1-9780-4078-b47b-39fd53c77fa4">
+  <producedTypes>
+    <objectType typeId="78083632-2264-4496-b343-1fb238f86a92" valueTypeId="28e4d2ab-727c-4dd6-9ea4-a5978f4ce9b8"/>
+    <managerType typeId="774d2d6f-d2ca-431b-9e83-ddc054209943" valueTypeId="16843204-fe19-4597-a610-dff5e13ab73e"/>
+  </producedTypes>
+  <name>ServiceList</name>
+  <synonym>
+    <key>en</key>
+    <value>Service list</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ServiceList.Template.MainDataCompositionSchema</mainDataCompositionSchema>
+  <templates uuid="ff5c3873-0c84-4e8a-b6c8-ba1e073d59d6">
+    <name>MainDataCompositionSchema</name>
+    <synonym>
+      <key>en</key>
+      <value>Main data composition schema</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

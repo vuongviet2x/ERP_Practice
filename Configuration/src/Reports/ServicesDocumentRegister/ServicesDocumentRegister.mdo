@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="661f1012-97bf-4122-a11c-c35237b41226">
+  <producedTypes>
+    <objectType typeId="9564cd08-9a9d-4799-bb14-2f1696458041" valueTypeId="3a441daa-3f69-4479-a7b6-9c62e67c37af"/>
+    <managerType typeId="1124a97f-b592-4293-8d91-f8ccda3067f5" valueTypeId="8dc1ce0c-1b5b-4e07-bee7-3167e4c24e37"/>
+  </producedTypes>
+  <name>ServicesDocumentRegister</name>
+  <synonym>
+    <key>en</key>
+    <value>Services document register</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ServicesDocumentRegister.Template.MainDataCompositionSchema</mainDataCompositionSchema>
+  <extendedPresentation>
+    <key>en</key>
+    <value>List of rendered services</value>
+  </extendedPresentation>
+  <templates uuid="5e92b340-153b-40ac-a893-0c2d871a31bf">
+    <name>MainDataCompositionSchema</name>
+    <synonym>
+      <key>en</key>
+      <value>Main data composition schema</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

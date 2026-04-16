@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b53c329a-233e-4cc2-8374-00ad3924990e">
+  <producedTypes>
+    <objectType typeId="8cf1a850-3e9a-4bd6-9704-0bd3ebf875bd" valueTypeId="bcb30057-e45b-4949-b9ae-2c0c3e5058e2"/>
+    <refType typeId="0bdf650e-e1df-4dd8-a1e1-840d7eedef8e" valueTypeId="7619d9f3-a721-4085-bea2-7af16c7dff7b"/>
+    <selectionType typeId="3b8a83e6-e771-4d6a-98b7-2857b9f615c9" valueTypeId="a5b1ed61-9f29-4a53-9ce2-e86a0165a143"/>
+    <listType typeId="c6a956aa-3590-4fe2-9dac-964646af4c1f" valueTypeId="a7cd9337-31cb-4067-ad01-444a5083500f"/>
+    <managerType typeId="b22bc85a-61fc-4ff8-8d9c-c7bd1b044426" valueTypeId="8de00d87-fb3b-429b-b49d-ae46ed3ac6e8"/>
+  </producedTypes>
+  <name>AdditionalMaterialProperties</name>
+  <synonym>
+    <key>en</key>
+    <value>Additional material properties</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.AdditionalMaterialProperties.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.AdditionalMaterialProperties.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>ChartOfCharacteristicTypes.MaterialProperties</owners>
+  <codeLength>11</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

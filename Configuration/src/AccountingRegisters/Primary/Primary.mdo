@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccountingRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c34081c7-705a-424b-a659-49155a8b39f0">
+  <producedTypes>
+    <selectionType typeId="95ab1511-a8c1-42e9-b5f8-9d1e0acf6dd5" valueTypeId="1569ae6c-5473-4fcf-8849-dc19785b6633"/>
+    <listType typeId="8b2de57c-06d1-4685-ae1b-c5edeef2fb24" valueTypeId="8afd22cd-2067-447e-a300-0dcd61a8001a"/>
+    <managerType typeId="34052db9-ab7d-4b37-8694-af01f546099c" valueTypeId="48a1aa23-9153-40a5-8d0a-ac1587667932"/>
+    <recordSetType typeId="f0a1cd60-ccad-4b05-86c1-85d48380973f" valueTypeId="ad4e8ce0-cd31-4559-bbc6-d626d04b96da"/>
+    <recordKeyType typeId="811ce103-ca5f-46bf-a8ea-8794f8696d2b" valueTypeId="83322ef4-8ffe-4cbd-b9f2-215df1a9a07f"/>
+    <recordType typeId="31d98e65-49dc-423e-bda5-1b2957ebe7b5" valueTypeId="6cf6d6a0-3ada-4252-ae4a-cf88eb62ed19"/>
+    <extDimensionsType typeId="bf49c04f-14c2-4155-a3f6-6080f2aa87fb" valueTypeId="1ab94c41-4400-4b39-973a-6ebe521b77f5"/>
+  </producedTypes>
+  <name>Primary</name>
+  <synonym>
+    <key>en</key>
+    <value>Primary</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <chartOfAccounts>ChartOfAccounts.Main</chartOfAccounts>
+  <correspondence>true</correspondence>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Accounting register records</value>
+  </extendedListPresentation>
+  <resources uuid="5ba2ef55-5b30-42fb-84b4-414822916c7d">
+    <name>Sum</name>
+    <synonym>
+      <key>en</key>
+      <value>Sum</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <balance>true</balance>
+  </resources>
+  <resources uuid="0d19332d-5736-432f-b588-bce4f0c5a3b3">
+    <name>Quantity</name>
+    <synonym>
+      <key>en</key>
+      <value>Quantity</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <accountingFlag>ChartOfAccounts.Main.AccountingFlag.Quantitative</accountingFlag>
+    <extDimensionAccountingFlag>ChartOfAccounts.Main.ExtDimensionAccountingFlag.Quantitative</extDimensionAccountingFlag>
+  </resources>
+</mdclass:AccountingRegister>

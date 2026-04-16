@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ce3c563e-ee9a-49cd-bfae-4f6186888c55">
+  <producedTypes>
+    <selectionType typeId="4b12bb51-33a1-4a7e-aef6-310198624e0d" valueTypeId="e71d6618-50c6-4b0a-a051-1fa66adc634f"/>
+    <listType typeId="2046705e-6439-46c6-b5b2-30197020f7a2" valueTypeId="11904a75-47fc-44ae-82f2-0b9179e53d61"/>
+    <managerType typeId="df6d0337-7e90-4678-8d3a-e584acc084c3" valueTypeId="990f8f63-a2ae-49d1-9449-40248c7cc556"/>
+    <recordSetType typeId="c9a4a08c-fe69-4d55-b958-112829519bcd" valueTypeId="e06dbce4-200a-4c7a-b765-d5e6a1054dc7"/>
+    <recordKeyType typeId="9abc11e2-2639-460e-ad84-13d2f85113f9" valueTypeId="e7d6268b-a024-4e21-98ba-9092498c35b6"/>
+    <recordType typeId="c162caa3-c8f6-4b86-b65a-69465013273d" valueTypeId="9a156eb5-b22a-401c-9565-22e46514894e"/>
+    <recordManagerType typeId="c99f0403-9e9c-4342-a054-9867d7f68dae" valueTypeId="077da84e-e917-4441-81b3-a9fb64aa8758"/>
+  </producedTypes>
+  <name>Prices</name>
+  <synonym>
+    <key>en</key>
+    <value>Prices</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>en</key>
+    <value>Price</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Material and service prices</value>
+  </listPresentation>
+  <resources uuid="d7ad2de0-2c8b-460d-aca1-9dbdf393ceee">
+    <name>Price</name>
+    <synonym>
+      <key>en</key>
+      <value>Price</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="86457f84-1fa6-41f2-9600-79e61111a61f">
+    <name>MaterialOrService</name>
+    <synonym>
+      <key>en</key>
+      <value>Material or service</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.MaterialsAndServices</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

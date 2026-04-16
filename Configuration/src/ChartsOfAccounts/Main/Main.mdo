@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfAccounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5bbf0b4f-844e-4506-bda4-1975a377390c">
+  <producedTypes>
+    <objectType typeId="86774d25-d5b5-4898-8eea-d225eae92990" valueTypeId="3d8a8124-5fef-4e7b-8c0a-6e84dbe3afd6"/>
+    <refType typeId="0ce43cdf-5516-433f-b984-6c9bafdc5906" valueTypeId="ab0d3edd-9480-4c52-9216-a7aec8f2c220"/>
+    <selectionType typeId="b3bd0a94-053e-4209-9198-8da2e3a287e5" valueTypeId="513c6694-c9c3-4714-8b74-69bb6fabec31"/>
+    <listType typeId="18548d3e-10e3-4fb4-881f-1a5147579965" valueTypeId="724b2852-3f00-4967-8d7b-a3f9193b6bcb"/>
+    <managerType typeId="ca7e8d0a-e6a2-4b24-ad95-4b50f8ed0dbe" valueTypeId="a878b0d5-a2db-441f-a0ee-258c394833fd"/>
+    <extDimensionTypes typeId="6c4a1aba-ce29-4c94-917a-31c86e9a19bc" valueTypeId="4bee4de1-ca37-4b61-a78a-36968bcdcee3"/>
+    <extDimensionTypesRow typeId="86b379dc-1eab-45d7-a905-b96de1991457" valueTypeId="9a8bd643-5a78-4afd-bca7-4acb32f4c34c"/>
+  </producedTypes>
+  <name>Main</name>
+  <synonym>
+    <key>en</key>
+    <value>Main</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfAccounts.Main.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfAccounts.Main.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>en</key>
+    <value>Main chart of accounts</value>
+  </listPresentation>
+  <extDimensionTypes>ChartOfCharacteristicTypes.ExtraDimensionTypes</extDimensionTypes>
+  <maxExtDimensionCount>2</maxExtDimensionCount>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <predefined>
+    <items id="d3bb90c0-9dc5-41bb-bb4e-81d9e87d5bf8">
+      <name>AccountsReceivable</name>
+      <description>Accounts receivable</description>
+      <code>2000</code>
+      <accountType>ActivePassive</accountType>
+      <extDimensionTypes>
+        <characteristicType>ChartOfCharacteristicTypes.ExtraDimensionTypes.Customers</characteristicType>
+        <extDimensionAccountingFlags>ChartOfAccounts.Main.ExtDimensionAccountingFlag.Quantitative</extDimensionAccountingFlags>
+      </extDimensionTypes>
+    </items>
+    <items id="b0dc23c5-8781-4bf1-b75b-d854c2b1f58f">
+      <name>AccountsPayable</name>
+      <description>Accounts payable</description>
+      <code>4000</code>
+      <accountType>ActivePassive</accountType>
+    </items>
+    <items id="8d0a9c6e-c1f5-41bf-a4c4-3d2e9a8e1aea">
+      <name>Inventory</name>
+      <description>Inventory</description>
+      <code>5000</code>
+      <accountingFlags>ChartOfAccounts.Main.AccountingFlag.Quantitative</accountingFlags>
+      <extDimensionTypes>
+        <characteristicType>ChartOfCharacteristicTypes.ExtraDimensionTypes.Materials</characteristicType>
+        <extDimensionAccountingFlags>ChartOfAccounts.Main.ExtDimensionAccountingFlag.Quantitative</extDimensionAccountingFlags>
+      </extDimensionTypes>
+    </items>
+    <items id="f324ea6f-e607-4a4d-94fa-16ad7985b5cf">
+      <name>Income</name>
+      <description>Income</description>
+      <code>9000</code>
+      <accountType>ActivePassive</accountType>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <accountingFlags uuid="25eba378-1f07-4ad4-b334-9071b1b7fbe8">
+    <name>Quantitative</name>
+    <synonym>
+      <key>en</key>
+      <value>Quantitative</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </accountingFlags>
+  <extDimensionAccountingFlags uuid="b125680c-38ac-4d9f-984e-9dcd863277f5">
+    <name>Quantitative</name>
+    <synonym>
+      <key>en</key>
+      <value>Quantitative</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </extDimensionAccountingFlags>
+</mdclass:ChartOfAccounts>

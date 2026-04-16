@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d07a14e-33da-48c8-ae5a-051f2e71a259">
+  <name>Payroll</name>
+  <synonym>
+    <key>en</key>
+    <value>Payroll</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Payroll</picture>
+  </picture>
+  <content>CommonPicture.Payroll</content>
+  <content>Catalog.Employees</content>
+  <content>Report.RevenueByTechnician</content>
+</mdclass:Subsystem>

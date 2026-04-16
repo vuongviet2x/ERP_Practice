@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bb549175-2315-46df-8e68-377877525674">
+  <producedTypes>
+    <selectionType typeId="e2d3cf3f-465b-4783-a1e5-d6f5fc048151" valueTypeId="dec917ef-828e-4638-9967-298041311e01"/>
+    <listType typeId="157fc1ac-8e2b-4cc4-a46e-8d389350cb7b" valueTypeId="2a241f78-eb3f-47fe-819b-36f43d4ba21f"/>
+    <managerType typeId="1e0de85c-6349-4733-9645-38809c59cc28" valueTypeId="ed135dd6-0c6f-49de-a38e-4fab7a66831d"/>
+    <recordSetType typeId="4a629fd8-ad62-4ab0-aca7-a57d17cb5e9e" valueTypeId="404fb37d-c035-4835-b530-589e015af2a6"/>
+    <recordKeyType typeId="040e2c8b-3cb6-41e0-8a59-a9a14b8bfbe4" valueTypeId="963a7235-1998-4256-91b8-813932ae5153"/>
+    <recordType typeId="4d21704c-9eec-47f7-b284-0ef444144abb" valueTypeId="3c502392-4527-4595-a335-e4cd5ace91a7"/>
+  </producedTypes>
+  <name>CostOfMaterials</name>
+  <synonym>
+    <key>en</key>
+    <value>Cost of materials</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Cost of materials register records</value>
+  </extendedListPresentation>
+  <resources uuid="a16e49f0-de77-4337-a51e-ea18ff2225da">
+    <name>Cost</name>
+    <synonym>
+      <key>en</key>
+      <value>Cost</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="53dc454d-977d-4bb4-8241-307926172373">
+    <name>Material</name>
+    <synonym>
+      <key>en</key>
+      <value>Material</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.MaterialsAndServices</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
