@@ -6,7 +6,12 @@ EndProcedure
 
 &AtClient
 Procedure WriteChanges(Command)
-	WriteChangesAtServer();
+	Node = Items.List.CurrentRow;
+	If Node = Undefined Or PredefinedNode(Node) Then
+		Return;
+	EndIf;
+	WriteChangesAtServer(Node);
+	ShowUserNotification("Changes registered", , String(Node));
 EndProcedure
 
 &AtServerNoContext

@@ -1,4 +1,7 @@
 Procedure BeforeWrite(Cancel, WriteMode, PostingMode)
+	If DataExchange.Load Then
+		Return; // data received by exchange is written as is
+	EndIf;
 	// Determining whether updating register record dates is required
 	UpdateRegisterRecordsDate = IsNew() Or RegisterRecords.BalanceOfMaterials.Modified();
 	If Not UpdateRegisterRecordsDate Then

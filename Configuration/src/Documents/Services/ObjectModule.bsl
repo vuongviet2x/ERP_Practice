@@ -49,7 +49,7 @@ Procedure Posting(Cancel, Mode)
 	|FROM
 	|	DocumentMaterialsAndServices AS DocumentMaterialsAndServices
 	|		LEFT JOIN AccumulationRegister.CostOfMaterials.Balance(
-	|				,
+	|				&BalancePeriod,
 	|				Material IN
 	|					(SELECT
 	|						DocumentMaterialsAndServices.MaterialOrService
@@ -57,7 +57,7 @@ Procedure Posting(Cancel, Mode)
 	|						DocumentMaterialsAndServices)) AS CostOfMaterialsBalance
 	|		ON DocumentMaterialsAndServices.MaterialOrService = CostOfMaterialsBalance.Material
 	|		LEFT JOIN AccumulationRegister.BalanceOfMaterials.Balance(
-	|				,
+	|				&BalancePeriod,
 	|				Material IN
 	|					(SELECT
 	|						DocumentMaterialsAndServices.MaterialOrService
@@ -65,6 +65,26 @@ Procedure Posting(Cancel, Mode)
 	|						DocumentMaterialsAndServices)) AS BalanceOfMaterialsBalance
 	|		ON DocumentMaterialsAndServices.MaterialOrService = BalanceOfMaterialsBalance.Material";
 	
+	
+	// Real-time posting: current balances (as in the book). Regular posting of a past document:
+	// balances at the moment of the document, without its own records and later documents.
+	If Mode = DocumentPostingMode.RealTime Then
+		Query2.SetParameter("BalancePeriod", Undefined);
+	Else
+		Query2.SetParameter("BalancePeriod", New Boundary(PointInTime(), BoundaryType.Excluding));
+	EndIf;
+	
+	// Managed lock mode: lock the materials of the document before reading their balances
+	DataLock = New DataLock;
+	LockItem = DataLock.Add("AccumulationRegister.BalanceOfMaterials");
+	LockItem.Mode = DataLockMode.Exclusive;
+	LockItem.DataSource = MaterialsAndServices.Unload(, "MaterialOrService");
+	LockItem.UseFromDataSource("Material", "MaterialOrService");
+	LockItem = DataLock.Add("AccumulationRegister.CostOfMaterials");
+	LockItem.Mode = DataLockMode.Exclusive;
+	LockItem.DataSource = MaterialsAndServices.Unload(, "MaterialOrService");
+	LockItem.UseFromDataSource("Material", "MaterialOrService");
+	DataLock.Lock();
 	
 	// Setting data locks for the CostOfMaterials and BalanceOfMaterials registers
 	RegisterRecords.CostOfMaterials.LockForUpdate = True;
@@ -74,7 +94,6 @@ Procedure Posting(Cancel, Mode)
 	RegisterRecords.BalanceOfMaterials.Write();
 	
 	QueryResult = Query2.Execute();     
-	VT = QueryResult.Unload();
 	SelectionDetailRecords = QueryResult.Select();
 	
 	While SelectionDetailRecords.Next() Do   
@@ -83,6 +102,15 @@ Procedure Posting(Cancel, Mode)
 		Else
 			MaterialCost = SelectionDetailRecords.Cost / SelectionDetailRecords.Quantity;
 		EndIf;
+		// register Primary
+		// First posting: Dr 2000 (AccountsReceivable) – Cr 9000 (Income) — revenue of EVERY row, materials and services
+		Record = RegisterRecords.Primary.Add();
+		Record.AccountDr = ChartsOfAccounts.Main.AccountsReceivable;
+		Record.AccountCr = ChartsOfAccounts.Main.Income;
+		Record.Period = Date;
+		Record.Sum = SelectionDetailRecords.TotalInDocument;
+		Record.ExtDimensionsDr[ChartsOfCharacteristicTypes.ExtraDimensionTypes.Customers] = Customer;
+		
 		If SelectionDetailRecords.MaterialServiceType = Enums.MaterialServiceTypes.Material Then    
 			// register BalanceOfMaterials Expense
 			
@@ -103,16 +131,6 @@ Procedure Posting(Cancel, Mode)
 			Record.Material = SelectionDetailRecords.MaterialOrService;
 			Record.Cost = SelectionDetailRecords.QuantityInDocument * MaterialCost;        
 			
-			// register Primary
-			// First posting: Dr 2000 (AccountsReceivable) – Cr 9000 (Income)
-			// Total
-			Record = RegisterRecords.Primary.Add();
-			Record.AccountDr = ChartsOfAccounts.Main.AccountsReceivable;
-			Record.AccountCr = ChartsOfAccounts.Main.Income;
-			Record.Period = Date;
-			Record.Sum = SelectionDetailRecords.TotalInDocument;
-			Record.ExtDimensionsDr[ChartsOfCharacteristicTypes.
-			ExtraDimensionTypes.Customers] = Customer;
 			// Second posting: Dr 9000 (Income) – Cr 5000 (Inventory) Cost
 			Record = RegisterRecords.Primary.Add();
 			Record.AccountDr = ChartsOfAccounts.Main.Income;
